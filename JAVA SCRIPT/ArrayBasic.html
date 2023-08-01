@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array Concept in java script</title>
+</head>
+<body>
+    <script>
+        // var type1="Deena";
+        // alert(typeof(type1));
+         // push (add) ,pop(last element only will be deleted),filter(update or only one value will be deteled),map(list)
+        // let numbersname=["One",1,"Two",2,"Three",3,3.0,true]//compile time execution
+
+        // alert(numbersname)
+        // let alphalet1=new Array('Z','X','Y');
+        var alphaletters=new Array();//run time of execution
+        alphaletters.push('A')
+        alphaletters.push('B')
+        alphaletters.push('C')
+        alphaletters.push('D')
+        alphaletters.push('E')
+        alphaletters.push('F')
+        // alert(alphaletters)
+            
+        // alphaletters.pop();//last element is deleted (F)
+
+        // function listall(data1)
+        // {
+        //     document.write(data1+"\n")
+        // }
+        // alphaletters.map(listall)
+        alert(alphaletters.length)
+       alphaletters.map((myletters)=>
+       {
+        
+        console.log(myletters)
+       })
+    </script>
+</body>
+</html>

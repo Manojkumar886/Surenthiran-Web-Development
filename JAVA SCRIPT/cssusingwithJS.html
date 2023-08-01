@@ -7,24 +7,20 @@
 </head>
 <body>
     <script>
-        const cssusage=()=>
+        let cssusing=()=>
         {
-            // const temp1=document.getElementById('orderlist')
-            // temp1.style.color="chocolate";
-            let temp1=document.getElementsByTagName("h2")
-            temp1.style.textTransform="uppercase";
+            // var execution=document.getElementById('colorchange');
+            // execution.style.textTransform="uppercase";
+            var execution1=document.getElementsByTagName('li')[1];
+            execution1.style.color="red";
         }
     </script>
-   <h2>Selectors In Cascading Style Sheet</h2>
-   <ol id="orderlist" onclick="cssusage()">
-       Type of Selectors
-       <li>Element  Selector</li>
-       <li>Id Selector</li>
-       <li class="selectortype">Class Selector</li>
-       <li>Universal Selector</li>
-       <li>Group Selector</li>
-   </ol>
-   <h4>Thank you</h4>
-    
+    <h1 id="colorchange" onclick="cssusing()">Web Developments</h1>
+    <ol>
+        <li>Html</li>
+        <li>Css</li>
+        <li>bootstrap</li>
+        <li>JavaScript</li>
+    </ol>
 </body>
 </html>
