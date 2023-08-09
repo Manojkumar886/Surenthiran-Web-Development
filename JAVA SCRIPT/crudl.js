@@ -1,5 +1,10 @@
 let flowersname=new Array("jasmine","rose","iris","lily","peony","carnation");
 
+
+// flowersname.map(( ok )=>
+// {
+//   alert(ok);
+// })
 let adding=()=>
 {
   const newvalue=document.getElementById("uservalue").value
@@ -10,14 +15,12 @@ let adding=()=>
 
 let viewing=()=>
 {
-    let all="";
-
+    let allvalues="";//initializing empty string will be used to collect a list of flowersname in array memory
     flowersname.map((data)=>
     {
-        all+="<tr><td>"+data+"</td></tr>"
+        allvalues+="<tr><td><hr>"+data+"</td></tr>"
     })
-    document.getElementById('listall').innerHTML="<table><thead><tr><th>FlowersNames</th></tr></thead><tbody>"+all+"</tbody></table>"
-    
+    document.getElementById("listall").innerHTML="<table border='3'><thead><tr><th>FLowers name</th></tr></thead><tbody>"+allvalues+"</tbody></table>"
 }
 
 let rearranging=()=>
@@ -62,3 +65,5 @@ let sorting=()=>
   flowersname.sort();
   viewing()
 }
+
+

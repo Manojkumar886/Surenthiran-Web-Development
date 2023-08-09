@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        span{
+            color: red;
+            text-shadow: 3px 5px 9px black;
+        }
+    </style>
+    <script src="Formvalidation.js"></script>
+</head>
+<body>
+    <form name="userdetails" align="center" onsubmit="return Verification()">
+        <h1>User Address Details</h1>
+        <div>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Flat/Door no" name="flatno"/>
+                    <span id="flatno1"></span>
+                </td>
+                <td>
+                    <input type="text" placeholder="Street name" name="streetname" />
+                    <span id="streetname1"></span>
+                </td>
+            </tr>
+            <br/>
+            <br/>
+            <tr>
+                <input type="tel"  placeholder="ex:9807987678" name="mobileno" />
+                <span id="mobileno1" ></span>
+            </tr>
+            <br/>
+            <br/>
+            <tr>
+                <input type="email"  placeholder="abc123@gmail.com" name="email" />
+                <span id="email1" ></span>
+            </tr>
+            <br/>
+            <br/>
+            <tr>
+                <input type="password" placeholder="min8 to max 16(num,alpha,special)" name="pass" />
+                <span id="pass1"></span>
+            </tr>
+            <br/>
+            <br/>
+            <tr>
+                <input type="submit" value="submit"/>
+                <input type="reset" value="cancel"/>
+            </tr>
+        </div>
+
+    </form>
+    
+</body>
+</html>
